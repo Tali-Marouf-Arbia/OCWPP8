@@ -1,4 +1,4 @@
-# Print-It WebSite v.1
+# Print-It 
 
 Carrousel Dynamique pour Imprimerie
 
