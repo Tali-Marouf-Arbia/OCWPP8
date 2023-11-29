@@ -51,15 +51,12 @@ function updateDots() {
 }
 
 function changeSlide(sens) {
-    numero = numero + sens;
-	modulo = numero % slides.length;
+    numero = (numero + sens + slides.length) % slides.length;
+    modulo = numero % slides.length;
 
     document.querySelector(".banner-img").src = './assets/images/slideshow/' + slides[modulo]['image'];
     document.getElementById("text").innerHTML = slides[modulo]['tagLine']; 
 
-	updateDots();
-
-    // console.log(sens);
+    updateDots();
 }
-
 
